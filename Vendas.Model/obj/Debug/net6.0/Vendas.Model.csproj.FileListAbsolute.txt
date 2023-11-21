@@ -1,0 +1,12 @@
+D:\faculdade\Linguagens de Programação\Asp.Net\Vendas\Vendas.Model\bin\Debug\net6.0\Vendas.Model.deps.json
+D:\faculdade\Linguagens de Programação\Asp.Net\Vendas\Vendas.Model\bin\Debug\net6.0\Vendas.Model.dll
+D:\faculdade\Linguagens de Programação\Asp.Net\Vendas\Vendas.Model\bin\Debug\net6.0\Vendas.Model.pdb
+D:\faculdade\Linguagens de Programação\Asp.Net\Vendas\Vendas.Model\obj\Debug\net6.0\Vendas.Model.csproj.AssemblyReference.cache
+D:\faculdade\Linguagens de Programação\Asp.Net\Vendas\Vendas.Model\obj\Debug\net6.0\Vendas.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\faculdade\Linguagens de Programação\Asp.Net\Vendas\Vendas.Model\obj\Debug\net6.0\Vendas.Model.AssemblyInfoInputs.cache
+D:\faculdade\Linguagens de Programação\Asp.Net\Vendas\Vendas.Model\obj\Debug\net6.0\Vendas.Model.AssemblyInfo.cs
+D:\faculdade\Linguagens de Programação\Asp.Net\Vendas\Vendas.Model\obj\Debug\net6.0\Vendas.Model.csproj.CoreCompileInputs.cache
+D:\faculdade\Linguagens de Programação\Asp.Net\Vendas\Vendas.Model\obj\Debug\net6.0\Vendas.Model.dll
+D:\faculdade\Linguagens de Programação\Asp.Net\Vendas\Vendas.Model\obj\Debug\net6.0\refint\Vendas.Model.dll
+D:\faculdade\Linguagens de Programação\Asp.Net\Vendas\Vendas.Model\obj\Debug\net6.0\Vendas.Model.pdb
+D:\faculdade\Linguagens de Programação\Asp.Net\Vendas\Vendas.Model\obj\Debug\net6.0\ref\Vendas.Model.dll
