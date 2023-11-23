@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Vendas.Model.TBProdutos>
+﻿@* @model IEnumerable<Vendas.Model.TBProdutos>
 
 @{
     ViewData["Title"] = "Index";
@@ -46,7 +46,13 @@
                 @Html.DisplayFor(modelItem => item.Unidade)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Foto)
+                    @if (item.Foto !=null && item.Foto.Length > 0)
+                    {                           
+                        var base64 = Convert.ToBase64String(item.Foto);
+                        var imgSrc = $"data:{item.MimeType};base64,{base64}";
+                        <img src="@imgSrc" alt="Produto Foto" />                     
+                    }
+                    @Html.DisplayFor(modelItem => item.Foto)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.MimeType)
@@ -61,5 +67,78 @@
             </td>
         </tr>
 }
+    </tbody>
+</table>
+ *@
+
+@model IEnumerable<Vendas.Model.TBProdutos>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCategoria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descrição)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Unidade)
+            </th>
+            <th>
+                Foto
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MimeType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Preco)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdCategoria)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descrição)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Unidade)
+                </td>
+                <td>
+                    @if (item.Foto != null && item.Foto.Length > 0)
+                    {
+                        var base64 = Convert.ToBase64String(item.Foto);
+                        var imgSrc = $"data:{item.MimeType};base64,{base64}";
+                        <img src="@imgSrc" alt="Produto Foto" />
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MimeType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Preco)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

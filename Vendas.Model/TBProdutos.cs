@@ -26,6 +26,7 @@ namespace Vendas.Model
         public byte[] Foto { get; set; }
         [StringLength(20)]
         [Unicode(false)]
+        
         public string MimeType { get; set; }
         public double Preco { get; set; }
     }
